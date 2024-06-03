@@ -1,0 +1,60 @@
+
+
+body{
+    margin:0;
+
+    color: white;
+}
+
+header{
+    background-color:#3DE07E;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+main {
+    background-color: black;
+    /* color: white; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article{
+    /* width: 100px;  */
+    /*TODO: How set width dynamically? */
+    height: 30vh;
+    width:15vh;
+    padding: 2rem;
+    /* border: dotted white; */
+
+    
+}
+article img{
+    height: 15vh;
+    
+}
+
+article button{
+    background-color: #E83F57;
+    
+}
+
+
+
+
+
+footer{
+    background-color: #333333;
+
+    display: flex;
+    justify-content: center;
+    /* align-content: space-around; */
+}
+
+footer section{
+    padding: 1rem;
+}
