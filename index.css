@@ -1,7 +1,4 @@
 
-/* Kommer den här kommentaren att hamna i min grid-verion branch? */
-/* Nu har jag använt >git checkout -b git-version */
-/* Håller tummarna och hoppas att jag commitar till grid-version den här gången :-)*/
 
 body{
     margin:0;
@@ -12,9 +9,7 @@ body{
 header{
     background-color:#3DE07E;
     color: black;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;    */
+    
 }
 
 
@@ -22,9 +17,7 @@ main {
     background-color: black;
     /* color: white; */
 
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
+    
 }
 article{
     /* width: 100px;  */
@@ -53,9 +46,7 @@ article button{
 footer{
     background-color: #333333;
 
-    /* display: flex;
-    justify-content: center; */
-    /* align-content: space-around; */
+   
 }
 
 footer section{
