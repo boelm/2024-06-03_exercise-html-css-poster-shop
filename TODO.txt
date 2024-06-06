@@ -1,0 +1,9 @@
+TODO - Postershop:
+
+- navicon.svn högst upp till vänster i <header>
+- svart padding/margin mellan stora bilder sista raden
+- ingen vit "padding" vid stor bild
+
+Extra:
+- add hoover for nav <p>:s
+- add hoover for insta, linkedin, faceb, twitter logos
