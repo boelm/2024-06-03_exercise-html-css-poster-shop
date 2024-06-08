@@ -1,8 +1,6 @@
 TODO - Postershop:
 
-- navicon.svn högst upp till vänster i <header>
-- svart padding/margin mellan stora bilder sista raden
-- ingen vit "padding" vid stor bild
+- second html-page
 
 Extra:
 - add hoover for nav <p>:s

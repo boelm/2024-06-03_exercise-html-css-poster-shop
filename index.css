@@ -11,18 +11,32 @@ body {
 header {
     background-color: #3DE07E;
     color: black;
+
     display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+
+    border-bottom: 20px solid black;
 }
+header .navicon{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 header h1{
-    grid-column-start: 1;
-    grid-column-end: 4;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
-header img{
-    grid-column-start: 2;
+header .ninja{
+    margin:0;
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: auto max-content auto;
+    grid-template-areas: ". ninja-img .";
+}
+header .ninja img{
+    height: 100%;
+    grid-area: ninja-img;
 }
 
 main{
@@ -30,47 +44,42 @@ main{
     padding: 5vh 20vh;
 }
 
-main .small{
+.small{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(4, min-content); */
-    /* grid-template-rows: repeat(5, 1fr); */
-}
-.small article {
-    /* width: min-content; */
-    padding: 1rem;
-}
-.small article img {
-    width: 20vw;
+    gap:1rem;
 }
 
-main .large{
+article figure{
+    margin: 0;
+}
+article figure img {
+    width: 100%;
+    height: 100%;
+}
+
+article h2, p, button{
+    margin: 1rem auto 1rem 2rem;
+}
+button {
+    background-color: #E83F57;
+    color:white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.large{
+    margin: 4rem auto;
+
     display: grid;
-    grid-template-columns: min-content auto min-content;
-    grid-template-areas: large auto large;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
 }
 .large article{
-    /* width: 30vw; */
     background-color: white;
     color: black;
-    padding: 1rem;
-
 }
-.large article img{
-    width: 30vw;
-    /* min-width: fit-content; */
-    padding: 0;
-    margin:0
-}
-.large article h2, p, button{
-    padding: 0.5rem;
-    padding-top: 1rem;
-}
-
-article button {
-    background-color: #E83F57;
-}
-
 
 footer {
     background-color: #333333;
@@ -99,11 +108,39 @@ footer section p{
     padding: 0;
 }
 
-
+/*TODO!!*/
 /* footer .social + img:hover{
     color: black;
     transform: (1,3);
 } */
+
+
+.checkout{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.checkout-header{
+    background-color: #340809;
+    width: 100%;;
+}
+.totalt{
+    font-weight: bold;
+}
+hr{
+    width: 100%;
+    size: 3px;
+
+    grid-column: 1/4;
+}
+#sum{
+    grid-column: 3/4;
+}
+#checkout{
+    /* width: 100%; */
+    margin-top: 3em;
+    grid-column: 3/4;
+}
 
 /* Styles for screens with a maximum width of 800px */
 @media screen and (max-width: 800px) {
